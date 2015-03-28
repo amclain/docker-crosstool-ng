@@ -22,7 +22,7 @@ RUN apt-get -y install libexpat1-dev
 WORKDIR /opt
 
 # Install crosstool-ng
-RUN curl http://crosstool-ng.org/download/crosstool-ng/${CROSSTOOL}.tar.bz2 | tar -xj
+RUN curl -s http://crosstool-ng.org/download/crosstool-ng/${CROSSTOOL}.tar.bz2 | tar -xj
 
 WORKDIR ${CROSSTOOL}
 RUN ./configure --prefix=/opt/crosstool-ng
