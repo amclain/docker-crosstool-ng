@@ -18,6 +18,7 @@ RUN apt-get -y install texinfo
 RUN apt-get -y install gperf
 RUN apt-get -y install libncurses5-dev
 RUN apt-get -y install libexpat1-dev
+RUN apt-get -y install subversion
 
 WORKDIR /opt
 
